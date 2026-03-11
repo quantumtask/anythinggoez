@@ -675,6 +675,23 @@ img {
   border-color: rgba(255, 255, 255, 0.18);
 }
 
+.cta-panel .cta-actions {
+  display: grid;
+  gap: 1rem;
+  margin-top: 0;
+  width: min(100%, 22rem);
+  justify-self: end;
+  align-self: center;
+}
+
+.cta-panel .cta-actions .btn {
+  width: 100%;
+  min-height: 3.6rem;
+  padding-inline: 1.35rem;
+  text-align: center;
+  white-space: normal;
+ }
+
 .site-footer {
   padding: 1.4rem 0 2rem;
 }
@@ -733,6 +750,11 @@ img {
   .steps-grid,
   .faq-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-panel .cta-actions {
+    justify-self: start;
+    width: min(100%, 24rem);
   }
 }
 
@@ -819,6 +841,10 @@ img {
 
   .hero-actions .btn,
   .cta-actions .btn {
+    width: 100%;
+  }
+
+  .cta-panel .cta-actions {
     width: 100%;
   }
 
